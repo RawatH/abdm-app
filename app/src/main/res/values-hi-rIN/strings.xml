@@ -137,4 +137,8 @@
     <string name="no_health_data_available">No health record available</string>
     <string name="abha_address">ABHA Address</string>
     <string name="age">Age</string>
+
+    <string name="expired_date">Expired Date</string>
+    <string name="revoked_date">Revoked Date</string>
+    <string name="denied_date">Denied Date</string>
 </resources>

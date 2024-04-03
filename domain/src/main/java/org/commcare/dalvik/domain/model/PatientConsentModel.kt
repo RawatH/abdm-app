@@ -26,6 +26,15 @@ data class PatientConsentModel(
     @SerializedName("health_info_to_date")
     val healthInfoToDate: String?,
 
+    @SerializedName("date_granted")
+    val grantedDate: String?,
+
+    @SerializedName("date_revoked")
+    val revokedDate: String?,
+
+    @SerializedName("date_denied")
+    val deniedDate: String?,
+
     val user: String?,
     val error: Error?,
     val status: String?,

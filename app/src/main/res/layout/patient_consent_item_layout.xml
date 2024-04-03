@@ -19,11 +19,11 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_8dp"
         android:elevation="5dp"
         android:minHeight="150dp"
         android:padding="@dimen/_5dp"
-        android:layout_marginTop="@dimen/_8dp"
-        android:layout_marginBottom="@dimen/_8dp"
         app:cardBackgroundColor="@color/very_light_blue"
         app:cardCornerRadius="0dp"
         app:cardUseCompatPadding="true">
@@ -73,8 +73,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -83,8 +83,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="3"
                         android:layout_height="match_parent"
+                        android:layout_weight="3"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
                         android:paddingRight="2dp"
@@ -98,10 +98,38 @@
                     android:minHeight="@dimen/_32dp">
 
                     <TextView
+                        android:id="@+id/statusDateLabel"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="2dp"
+                        android:paddingLeft="2dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/statusDate"
+                        style="@style/Headline2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical|end"
+                        android:paddingEnd="2dp"
+                        android:paddingRight="2dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:minHeight="@dimen/_32dp">
+
+                    <TextView
+                        style="@style/Headline2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -110,8 +138,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="3"
                         android:layout_height="match_parent"
+                        android:layout_weight="3"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
                         android:paddingRight="2dp"
@@ -127,8 +155,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -138,12 +166,11 @@
                         android:id="@+id/patientName"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
-                        android:paddingRight="2dp"
-                         />
+                        android:paddingRight="2dp" />
 
                 </TableRow>
 
@@ -155,8 +182,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -166,14 +193,14 @@
                         android:id="@+id/consentCreationDate"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
-                        android:paddingRight="2dp"
-                       />
+                        android:paddingRight="2dp" />
 
                 </TableRow>
+
                 <TableRow
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -182,8 +209,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -193,12 +220,11 @@
                         android:id="@+id/consentGrantedDate"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
-                        android:paddingRight="2dp"
-                       />
+                        android:paddingRight="2dp" />
 
                 </TableRow>
 
@@ -235,8 +261,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -246,8 +272,8 @@
                         android:id="@+id/fromDate"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
                         android:paddingRight="2dp" />
@@ -262,8 +288,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -273,8 +299,8 @@
                         android:id="@+id/toDate"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
                         android:paddingRight="2dp" />
@@ -289,8 +315,8 @@
                     <TextView
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:paddingStart="2dp"
                         android:paddingLeft="2dp"
@@ -300,8 +326,8 @@
                         android:id="@+id/expiryDate"
                         style="@style/Headline2"
                         android:layout_width="0dp"
-                        android:layout_weight="2"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:gravity="center_vertical|end"
                         android:paddingEnd="2dp"
                         android:paddingRight="2dp" />

@@ -193,6 +193,7 @@ class AbdmActivity : BaseActivity<AbdmActivityBinding>(AbdmActivityBinding::infl
         intent.extras?.containsKey("abdm_api_token")?.let { tokenPresent ->
             if (tokenPresent) {
                 intent.extras?.getString("abdm_api_token")?.let {
+                    Timber.d("Token ----> $it")
                     if (it.isEmpty()) {
                         Timber.d("Token is empty.")
                         showMessageAndDispatchResult(TranslationKey.TOKEN_MISSING.toString())
